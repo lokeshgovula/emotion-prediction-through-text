@@ -1,0 +1,31 @@
+# Install virtualenv
+pip install virtualenv
+
+#To check Versions 
+pip --version
+python --version
+
+#Create a virtual env 
+python -m virtualenv --python python$version <venv_name> like venv, myvenv
+pause
+#press shift+control+P to open the commond Palette and click on the Python: Select Intrepeter.
+Then Select Python intrepeter which came with ur virtual env.
+
+#Activate environment and install dependency libraries
+.venv\Scripts\activate or activate.ps1 or Activate.ps1
+
+pip install -r requirements.txt
+
+#Deactivate env
+deactivate
+pause
+
+#Press shift + control + P to open the commond Palette and click on the Python: Select Intrepeter.
+Then Select Python intrepeter which came with ur virtual env.
+rm -r <venv_name>
+
+#To run streamlit code 
+streamlit run <app.py>
+
+#To stop the running program 
+Press ctrl + C
